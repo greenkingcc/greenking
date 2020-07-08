@@ -1,9 +1,10 @@
 :root {
-  --mainBrown: #2d1ef1;
+  --mainBrown: #2d1e1f;
   --mainYellow: #ff9e09;
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
   --mainDark: #222;
+  --mainGreen: #85ce34;
 }
 
 body {
@@ -18,11 +19,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Courier New', Courier, monospace !important;
+  font-family: "Acumin Pro", "Courier New", Courier, monospace !important;
   letter-spacing: 0.25rem !important;
 }
 
-.logo {}
+.logo {
+}
 
 .text-yellow {
   color: var(--mainYellow);
@@ -32,4 +34,45 @@ h6 {
   cursor: pointer;
   color: var(--mainYellow);
   font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+.icon-weed {
+  cursor: pointer;
+  color: var(--mainGreen);
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.default-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  background-position: center;
+  background-size: cover;
+}
+
+.btn-green {
+  color: var(--mainWhite);
+  background-color: var(--mainGreen);
+  width: 180px;
+  height: 60px;
+  border-radius: 27px;
+  font-family: anzeigen-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-shadow: 4px 4px 0px black;
+  font-size: 17px;
+  letter-spacing: -0.03em;
+}
+.btn-green:hover {
+  background-color: var(--mainWhite);
+}
+
+.nav-item {
+  padding: 3rem 3rem 3rem 3rem;
 }
